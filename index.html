@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar IPS - Platform Pembelajaran Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-globe-asia me-2"></i>Belajar IPS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kelas">Kelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#materi">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kuis">Kuis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-in">
+                    <h1>Belajar IPS Jadi Lebih Menyenangkan</h1>
+                    <p class="lead mb-4">Platform pembelajaran interaktif untuk memahami Ilmu Pengetahuan Sosial dengan cara yang menarik dan mudah dipahami.</p>
+                    <a href="#kelas" class="btn btn-light btn-lg me-3 smooth-scroll">Mulai Belajar</a>
+                    <a href="#kuis" class="btn btn-outline-light btn-lg smooth-scroll">Coba Kuis</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books_23-2149334862.jpg" alt="Hero Image" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kelas Section -->
+    <section id="kelas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pilih Kelasmu</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="grade-card">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-geography-class-illustration_23-2149489739.jpg" alt="Kelas 7" class="img-fluid rounded-3 mb-3">
+                        <h3>Kelas 7</h3>
+                        <p>Materi dasar IPS untuk kelas 7 SMP/MTs</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check-circle me-2"></i>Ruang dan Interaksi Antarruang</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Potensi Sumber Daya Alam</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Dinamika Kependudukan</li>
+                        </ul>
+                        <a href="materi/kelas7.html" class="btn btn-primary" onclick="window.open('materi/kelas7.html', '_blank'); return false;">Pelajari Materi</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="grade-card">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-history-class-illustration_23-2149489737.jpg" alt="Kelas 8" class="img-fluid rounded-3 mb-3">
+                        <h3>Kelas 8</h3>
+                        <p>Materi lanjutan IPS untuk kelas 8 SMP/MTs</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check-circle me-2"></i>Interaksi Sosial</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Kegiatan Ekonomi</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Perubahan Sosial Budaya</li>
+                        </ul>
+                        <a href="materi/kelas8.html" class="btn btn-primary" onclick="window.open('materi/kelas8.html', '_blank'); return false;">Pelajari Materi</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="grade-card">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-economics-class-illustration_23-2149489738.jpg" alt="Kelas 9" class="img-fluid rounded-3 mb-3">
+                        <h3>Kelas 9</h3>
+                        <p>Materi pendalaman IPS untuk kelas 9 SMP/MTs</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check-circle me-2"></i>Kondisi Geografis Asia & Eropa</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Perdagangan Internasional</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Modernisasi & Globalisasi</li>
+                        </ul>
+                        <a href="materi/kelas9.html" class="btn btn-primary" onclick="window.open('materi/kelas9.html', '_blank'); return false;">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section id="materi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Materi Pembelajaran</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-history-class-illustration_23-2149489737.jpg" class="card-img-top" alt="Sejarah">
+                        <div class="card-body">
+                            <h5 class="card-title">Sejarah Indonesia</h5>
+                            <p class="card-text">Pelajari sejarah bangsa Indonesia dari masa ke masa.</p>
+                            <a href="materi/sejarah.html" class="btn btn-primary">Pelajari</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-geography-class-illustration_23-2149489739.jpg" class="card-img-top" alt="Geografi">
+                        <div class="card-body">
+                            <h5 class="card-title">Geografi</h5>
+                            <p class="card-text">Eksplorasi keunikan geografis Indonesia dan dunia.</p>
+                            <a href="materi/geografi.html" class="btn btn-primary">Pelajari</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-economics-class-illustration_23-2149489738.jpg" class="card-img-top" alt="Ekonomi">
+                        <div class="card-body">
+                            <h5 class="card-title">Ekonomi</h5>
+                            <p class="card-text">Pahami dasar-dasar ekonomi dan penerapannya.</p>
+                            <a href="materi/ekonomi.html" class="btn btn-primary">Pelajari</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuis Section -->
+    <section id="kuis" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Kuis Interaktif</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quiz-container">
+                        <div id="quiz-container">
+                            <h3 class="text-center mb-4">Siap untuk menguji pengetahuanmu?</h3>
+                            <p class="text-center mb-4">Pilih kategori kuis yang ingin kamu coba:</p>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary w-100" onclick="startQuiz('kelas7')">Kuis Kelas 7</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary w-100" onclick="startQuiz('kelas8')">Kuis Kelas 8</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary w-100" onclick="startQuiz('kelas9')">Kuis Kelas 9</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Belajar IPS</h5>
+                    <p>Platform pembelajaran IPS interaktif untuk semua</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Ikuti Kami</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Belajar IPS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Handle navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle material links
+            const materialLinks = document.querySelectorAll('a[href^="materi/"]');
+            materialLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    window.location.href = href;
+                });
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add active class to navbar items on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    const id = section.getAttribute('id');
+                    
+                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+
+        // Function to handle material navigation
+        function openMaterial(kelas) {
+            const path = `materi/kelas${kelas}.html`;
+            try {
+                window.open(path, '_blank');
+            } catch (e) {
+                window.location.href = path;
+            }
+        }
+
+        // Add click handlers to all material buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const materialButtons = document.querySelectorAll('.grade-card .btn-primary');
+            materialButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    try {
+                        window.open(href, '_blank');
+                    } catch (e) {
+                        window.location.href = href;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

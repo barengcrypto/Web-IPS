@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Indonesia - Belajar IPS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-globe-asia me-2"></i>Belajar IPS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#materi">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#kuis">Kuis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Materi -->
+    <div class="container mt-5 pt-4">
+        <h1 class="mb-4">Sejarah Indonesia</h1>
+        
+        <div class="accordion" id="materiSejarah">
+            <!-- Masa Pra-Sejarah -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#praSejarah">
+                        Masa Pra-Sejarah Indonesia
+                    </button>
+                </h2>
+                <div id="praSejarah" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <h3>Zaman Batu</h3>
+                        <p>Zaman batu di Indonesia dibagi menjadi tiga periode:</p>
+                        <ul>
+                            <li><strong>Paleolitikum</strong> - Zaman batu tua (500.000-10.000 SM)</li>
+                            <li><strong>Mesolitikum</strong> - Zaman batu tengah (10.000-3.000 SM)</li>
+                            <li><strong>Neolitikum</strong> - Zaman batu muda (3.000-1.800 SM)</li>
+                        </ul>
+                        <p>Pada masa ini, manusia purba mulai menggunakan alat-alat dari batu dan hidup nomaden (berpindah-pindah).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masa Kerajaan -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masaKerajaan">
+                        Masa Kerajaan
+                    </button>
+                </h2>
+                <div id="masaKerajaan" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <h3>Kerajaan-Kerajaan Besar di Indonesia</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kerajaan</th>
+                                        <th>Periode</th>
+                                        <th>Lokasi</th>
+                                        <th>Peninggalan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sriwijaya</td>
+                                        <td>Abad 7-14 M</td>
+                                        <td>Sumatra</td>
+                                        <td>Prasasti Kedukan Bukit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Majapahit</td>
+                                        <td>1293-1500 M</td>
+                                        <td>Jawa Timur</td>
+                                        <td>Candi Trowulan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masa Kolonial -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masaKolonial">
+                        Masa Kolonial
+                    </button>
+                </h2>
+                <div id="masaKolonial" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <h3>Penjajahan di Indonesia</h3>
+                        <ol>
+                            <li><strong>Portugis (1511-1641)</strong>
+                                <ul>
+                                    <li>Menguasai Malaka</li>
+                                    <li>Mencari rempah-rempah</li>
+                                </ul>
+                            </li>
+                            <li><strong>Belanda (1602-1942)</strong>
+                                <ul>
+                                    <li>Mendirikan VOC</li>
+                                    <li>Politik Tanam Paksa</li>
+                                    <li>Politik Etis</li>
+                                </ul>
+                            </li>
+                            <li><strong>Inggris (1811-1816)</strong>
+                                <ul>
+                                    <li>Masa Raffles</li>
+                                    <li>Sistem Land Rent</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
