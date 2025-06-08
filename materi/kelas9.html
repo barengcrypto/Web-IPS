@@ -3,655 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi IPS Kelas 9</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Materi IPS Kelas 9 - Belajar IPS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .course-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .price-tag {
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="fas fa-arrow-left me-2"></i>Kembali ke Beranda
+                <i class="fas fa-globe-asia me-2"></i>Belajar IPS
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#materi">Materi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container py-5 mt-5">
-        <h1 class="text-center mb-5">Materi IPS Kelas 9</h1>
+    <!-- Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Materi IPS Kelas 9</h1>
+            
+            <!-- Featured Course -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="video-container mb-4">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Paket Lengkap IPS Kelas 9</h2>
+                    <p class="lead">Persiapkan diri untuk ujian dengan materi lengkap!</p>
+                    <div class="mb-4">
+                        <span class="price-tag mb-3">Rp 199.000</span>
+                        <span class="text-muted text-decoration-line-through ms-2">Rp 299.000</span>
+                    </div>
+                    <ul class="feature-list mb-4">
+                        <li>40+ Video pembelajaran HD</li>
+                        <li>Modul digital lengkap</li>
+                        <li>Bank soal UN/USBN</li>
+                        <li>Try out online</li>
+                        <li>Konsultasi guru</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg">Beli Sekarang</button>
+                </div>
+            </div>
 
-        <!-- Semester 1 -->
-        <div class="semester-section mb-5">
-            <h2 class="text-center mb-4">Semester 1</h2>
-            <div class="accordion" id="semester1Accordion">
-                <!-- Bab 1: Potensi Indonesia Menjadi Negara Maju -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bab1">
-                            Bab 1: Potensi Indonesia Menjadi Negara Maju
-                        </button>
-                    </h2>
-                    <div id="bab1" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <h3>A. Karakteristik Negara Maju</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Negara maju adalah negara yang memiliki standar hidup tinggi dan perkembangan industri, teknologi, serta ekonomi yang pesat.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Indikator Ekonomi</h4>
-                                            <ul>
-                                                <li>Pendapatan per kapita tinggi</li>
-                                                <li>Industrialisasi maju</li>
-                                                <li>Infrastruktur modern</li>
-                                                <li>Perdagangan internasional aktif</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Indikator Sosial</h4>
-                                            <ul>
-                                                <li>Pendidikan berkualitas</li>
-                                                <li>Layanan kesehatan baik</li>
-                                                <li>Tingkat kesejahteraan tinggi</li>
-                                                <li>Penguasaan teknologi</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Potensi Indonesia</h3>
-                            <div class="row g-4">
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Sumber Daya Alam</h4>
-                                            <ul>
-                                                <li>Mineral</li>
-                                                <li>Energi</li>
-                                                <li>Pertanian</li>
-                                                <li>Kelautan</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Sumber Daya Manusia</h4>
-                                            <ul>
-                                                <li>Jumlah besar</li>
-                                                <li>Usia produktif</li>
-                                                <li>Keterampilan</li>
-                                                <li>Kreativitas</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Letak Strategis</h4>
-                                            <ul>
-                                                <li>Jalur perdagangan</li>
-                                                <li>Posisi silang</li>
-                                                <li>Akses global</li>
-                                                <li>Iklim tropis</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Budaya</h4>
-                                            <ul>
-                                                <li>Keragaman</li>
-                                                <li>Wisata</li>
-                                                <li>Kuliner</li>
-                                                <li>Kesenian</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Course Modules -->
+            <h3 class="text-center mb-4">Materi Pembelajaran</h3>
+            <div class="row">
+                <!-- Module 1 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Kondisi Geografis">
+                        <div class="card-body">
+                            <h5 class="card-title">Kondisi Geografis Asia & Eropa</h5>
+                            <p class="card-text">Pelajari karakteristik geografis benua Asia dan Eropa.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>15 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>8 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>5 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bab 2: Perdagangan Internasional -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab2">
-                            Bab 2: Perdagangan Internasional
-                        </button>
-                    </h2>
-                    <div id="bab2" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>A. Pengertian dan Faktor Pendorong</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Perdagangan internasional adalah kegiatan jual beli barang dan jasa yang dilakukan oleh penduduk suatu negara dengan penduduk negara lain.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Faktor Pendorong</h4>
-                                            <ul>
-                                                <li>Perbedaan Sumber Daya
-                                                    <ul>
-                                                        <li>Alam</li>
-                                                        <li>Manusia</li>
-                                                        <li>Teknologi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Kebutuhan
-                                                    <ul>
-                                                        <li>Barang</li>
-                                                        <li>Jasa</li>
-                                                        <li>Modal</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Manfaat</h4>
-                                            <ul>
-                                                <li>Ekonomi
-                                                    <ul>
-                                                        <li>Devisa negara</li>
-                                                        <li>Lapangan kerja</li>
-                                                        <li>Transfer teknologi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Sosial
-                                                    <ul>
-                                                        <li>Hubungan internasional</li>
-                                                        <li>Pertukaran budaya</li>
-                                                        <li>Peningkatan SDM</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Ekspor dan Impor Indonesia</h3>
-                            <div class="table-responsive mb-4">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Jenis</th>
-                                            <th>Komoditas</th>
-                                            <th>Negara Tujuan/Asal</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Ekspor</td>
-                                            <td>Minyak sawit, batu bara, tekstil</td>
-                                            <td>China, AS, Jepang</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Impor</td>
-                                            <td>Mesin, elektronik, minyak</td>
-                                            <td>China, Singapura, Jepang</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <!-- Module 2 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Perdagangan">
+                        <div class="card-body">
+                            <h5 class="card-title">Perdagangan Internasional</h5>
+                            <p class="card-text">Memahami konsep dan praktik perdagangan internasional.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>12 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>6 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>4 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bab 3: Modernisasi dan Globalisasi -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab3">
-                            Bab 3: Modernisasi dan Globalisasi
-                        </button>
-                    </h2>
-                    <div id="bab3" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>A. Modernisasi</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Modernisasi adalah proses perubahan dari cara-cara tradisional ke cara-cara baru yang lebih maju untuk meningkatkan kesejahteraan masyarakat.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Aspek Modernisasi</h4>
-                                            <ul>
-                                                <li>Teknologi
-                                                    <ul>
-                                                        <li>Digitalisasi</li>
-                                                        <li>Otomatisasi</li>
-                                                        <li>Inovasi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Sosial
-                                                    <ul>
-                                                        <li>Pendidikan</li>
-                                                        <li>Kesehatan</li>
-                                                        <li>Gaya hidup</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Dampak</h4>
-                                            <ul>
-                                                <li>Positif
-                                                    <ul>
-                                                        <li>Efisiensi</li>
-                                                        <li>Produktivitas</li>
-                                                        <li>Kemudahan</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Negatif
-                                                    <ul>
-                                                        <li>Ketergantungan</li>
-                                                        <li>Konsumerisme</li>
-                                                        <li>Individualisme</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Globalisasi</h3>
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bidang Ekonomi</h4>
-                                            <ul>
-                                                <li>Perdagangan bebas</li>
-                                                <li>Pasar global</li>
-                                                <li>Investasi asing</li>
-                                                <li>E-commerce</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bidang Sosial Budaya</h4>
-                                            <ul>
-                                                <li>Pertukaran budaya</li>
-                                                <li>Media massa</li>
-                                                <li>Gaya hidup</li>
-                                                <li>Nilai-nilai</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bidang Politik</h4>
-                                            <ul>
-                                                <li>Kerja sama</li>
-                                                <li>Organisasi internasional</li>
-                                                <li>Diplomasi</li>
-                                                <li>HAM</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Module 3 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Globalisasi">
+                        <div class="card-body">
+                            <h5 class="card-title">Modernisasi & Globalisasi</h5>
+                            <p class="card-text">Eksplorasi dampak globalisasi dalam kehidupan.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>10 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>5 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>3 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Semester 2 -->
-        <div class="semester-section">
-            <h2 class="text-center mb-4">Semester 2</h2>
-            <div class="accordion" id="semester2Accordion">
-                <!-- Bab 4: Perkembangan Politik di Asia dan Eropa -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab4">
-                            Bab 4: Perkembangan Politik di Asia dan Eropa
-                        </button>
-                    </h2>
-                    <div id="bab4" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Perkembangan Politik di Asia</h3>
-                            
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Asia Timur</h4>
-                                            <ul>
-                                                <li>Tiongkok
-                                                    <ul>
-                                                        <li>Reformasi ekonomi</li>
-                                                        <li>Sistem satu partai</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Jepang
-                                                    <ul>
-                                                        <li>Monarki konstitusional</li>
-                                                        <li>Demokrasi parlementer</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Asia Tenggara</h4>
-                                            <ul>
-                                                <li>Indonesia
-                                                    <ul>
-                                                        <li>Demokrasi Pancasila</li>
-                                                        <li>Reformasi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Malaysia
-                                                    <ul>
-                                                        <li>Monarki konstitusional</li>
-                                                        <li>Sistem federal</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>Perkembangan Politik di Eropa</h3>
-                            <div class="table-responsive mb-4">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Negara</th>
-                                            <th>Sistem Politik</th>
-                                            <th>Karakteristik</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Inggris</td>
-                                            <td>Monarki Parlementer</td>
-                                            <td>Raja sebagai kepala negara, PM sebagai kepala pemerintahan</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Prancis</td>
-                                            <td>Republik Semi-Presidensial</td>
-                                            <td>Presiden dan PM berbagi kekuasaan</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jerman</td>
-                                            <td>Republik Federal</td>
-                                            <td>Sistem multi-partai dengan koalisi</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bab 5: Uang dan Lembaga Keuangan -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab5">
-                            Bab 5: Uang dan Lembaga Keuangan
-                        </button>
-                    </h2>
-                    <div id="bab5" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Uang dan Fungsinya</h3>
-                            
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card border-primary">
-                                        <div class="card-body">
-                                            <h4 class="text-primary">Fungsi Asli</h4>
-                                            <ul>
-                                                <li>Alat tukar</li>
-                                                <li>Satuan hitung</li>
-                                                <li>Penyimpan nilai</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card border-success">
-                                        <div class="card-body">
-                                            <h4 class="text-success">Fungsi Turunan</h4>
-                                            <ul>
-                                                <li>Alat pembayaran</li>
-                                                <li>Alat pemindah kekayaan</li>
-                                                <li>Standar pembayaran utang</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h4>Jenis-jenis Uang</h4>
-                            <div class="table-responsive mb-4">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Jenis</th>
-                                            <th>Karakteristik</th>
-                                            <th>Contoh</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Uang Kartal</td>
-                                            <td>Dikeluarkan bank sentral</td>
-                                            <td>Uang kertas, koin</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Uang Giral</td>
-                                            <td>Dikeluarkan bank umum</td>
-                                            <td>Cek, giro</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Uang Kuasi</td>
-                                            <td>Hampir seperti uang</td>
-                                            <td>Deposito berjangka</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <h3>Lembaga Keuangan</h3>
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bank Sentral</h4>
-                                            <ul>
-                                                <li>Mencetak uang</li>
-                                                <li>Mengatur moneter</li>
-                                                <li>Mengawasi bank</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bank Umum</h4>
-                                            <ul>
-                                                <li>Simpan pinjam</li>
-                                                <li>Transfer</li>
-                                                <li>Investasi</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Lembaga Non-Bank</h4>
-                                            <ul>
-                                                <li>Asuransi</li>
-                                                <li>Pegadaian</li>
-                                                <li>Koperasi</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bab 6: Perdagangan Saham -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab6">
-                            Bab 6: Perdagangan Saham
-                        </button>
-                    </h2>
-                    <div id="bab6" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Pasar Modal</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Pasar modal adalah tempat diperjualbelikannya berbagai instrumen keuangan jangka panjang, seperti saham, obligasi, dan reksa dana.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Manfaat bagi Perusahaan</h4>
-                                            <ul>
-                                                <li>Sumber pendanaan</li>
-                                                <li>Ekspansi usaha</li>
-                                                <li>Peningkatan nilai perusahaan</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Manfaat bagi Investor</h4>
-                                            <ul>
-                                                <li>Potensi keuntungan</li>
-                                                <li>Diversifikasi investasi</li>
-                                                <li>Kepemilikan perusahaan</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h4>Jenis-jenis Investasi</h4>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Jenis</th>
-                                            <th>Karakteristik</th>
-                                            <th>Risiko</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Saham</td>
-                                            <td>Kepemilikan perusahaan</td>
-                                            <td>Tinggi</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Obligasi</td>
-                                            <td>Surat utang</td>
-                                            <td>Menengah</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Reksa Dana</td>
-                                            <td>Kumpulan investasi</td>
-                                            <td>Bervariasi</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="alert alert-warning mt-4">
-                                <h5><i class="fas fa-exclamation-triangle me-2"></i>Perhatian:</h5>
-                                <p class="mb-0">Sebelum berinvestasi, perhatikan:</p>
-                                <ul class="mb-0">
-                                    <li>Profil risiko</li>
-                                    <li>Tujuan investasi</li>
-                                    <li>Jangka waktu</li>
-                                    <li>Diversifikasi</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigasi -->
-        <div class="bg-primary text-white p-3 rounded mt-5">
-            <h4>Daftar Materi:</h4>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Semester 1:</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#bab1" class="text-white">Bab 1: Potensi Indonesia Menjadi Negara Maju</a></li>
-                        <li><a href="#bab2" class="text-white">Bab 2: Perdagangan Internasional</a></li>
-                        <li><a href="#bab3" class="text-white">Bab 3: Modernisasi dan Globalisasi</a></li>
-                    </ul>
+                    <h5>Belajar IPS</h5>
+                    <p>Platform pembelajaran IPS interaktif untuk semua</p>
                 </div>
-                <div class="col-md-6">
-                    <h5>Semester 2:</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#bab4" class="text-white">Bab 4: Perkembangan Politik di Asia dan Eropa</a></li>
-                        <li><a href="#bab5" class="text-white">Bab 5: Uang dan Lembaga Keuangan</a></li>
-                        <li><a href="#bab6" class="text-white">Bab 6: Perdagangan Saham</a></li>
-                    </ul>
+                <div class="col-md-6 text-md-end">
+                    <h5>Hubungi Kami</h5>
+                    <p>Email: info@belajarips.com<br>
+                    WhatsApp: +62 812-3456-7890</p>
                 </div>
             </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Belajar IPS. All rights reserved.</p>
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html> 

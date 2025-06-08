@@ -3,610 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi IPS Kelas 8</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Materi IPS Kelas 8 - Belajar IPS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .course-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .price-tag {
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="fas fa-arrow-left me-2"></i>Kembali ke Beranda
+                <i class="fas fa-globe-asia me-2"></i>Belajar IPS
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#materi">Materi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container py-5 mt-5">
-        <h1 class="text-center mb-5">Materi IPS Kelas 8</h1>
+    <!-- Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Materi IPS Kelas 8</h1>
+            
+            <!-- Featured Course -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="video-container mb-4">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Paket Lengkap IPS Kelas 8</h2>
+                    <p class="lead">Pelajari IPS kelas 8 dengan metode yang interaktif!</p>
+                    <div class="mb-4">
+                        <span class="price-tag mb-3">Rp 199.000</span>
+                        <span class="text-muted text-decoration-line-through ms-2">Rp 299.000</span>
+                    </div>
+                    <ul class="feature-list mb-4">
+                        <li>30+ Video pembelajaran HD</li>
+                        <li>Modul digital interaktif</li>
+                        <li>Bank soal + pembahasan</li>
+                        <li>Konsultasi online</li>
+                        <li>Akses seumur hidup</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg">Beli Sekarang</button>
+                </div>
+            </div>
 
-        <!-- Semester 1 -->
-        <div class="semester-section mb-5">
-            <h2 class="text-center mb-4">Semester 1</h2>
-            <div class="accordion" id="semester1Accordion">
-                <!-- Bab 1: Interaksi Sosial -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bab1">
-                            Bab 1: Interaksi Sosial
-                        </button>
-                    </h2>
-                    <div id="bab1" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <h3>A. Pengertian dan Syarat Interaksi Sosial</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Interaksi sosial adalah hubungan timbal balik antara individu dengan individu, individu dengan kelompok, atau kelompok dengan kelompok dalam masyarakat.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Syarat Interaksi Sosial</h4>
-                                            <ul>
-                                                <li>Kontak Sosial
-                                                    <ul>
-                                                        <li>Langsung</li>
-                                                        <li>Tidak langsung</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Komunikasi
-                                                    <ul>
-                                                        <li>Verbal</li>
-                                                        <li>Non-verbal</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bentuk Interaksi</h4>
-                                            <ul>
-                                                <li>Asosiatif
-                                                    <ul>
-                                                        <li>Kerja sama</li>
-                                                        <li>Akomodasi</li>
-                                                        <li>Asimilasi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Disosiatif
-                                                    <ul>
-                                                        <li>Persaingan</li>
-                                                        <li>Kontravensi</li>
-                                                        <li>Konflik</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Faktor yang Mempengaruhi</h3>
-                            <div class="table-responsive mb-4">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Faktor</th>
-                                            <th>Penjelasan</th>
-                                            <th>Contoh</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Imitasi</td>
-                                            <td>Meniru perilaku orang lain</td>
-                                            <td>Meniru gaya berpakaian</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sugesti</td>
-                                            <td>Pengaruh dari orang lain</td>
-                                            <td>Iklan produk</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Identifikasi</td>
-                                            <td>Kecenderungan menyamakan diri</td>
-                                            <td>Mengidolakan artis</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Simpati</td>
-                                            <td>Perasaan tertarik pada orang lain</td>
-                                            <td>Menolong korban bencana</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+            <!-- Course Modules -->
+            <h3 class="text-center mb-4">Materi Pembelajaran</h3>
+            <div class="row">
+                <!-- Module 1 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Interaksi Sosial">
+                        <div class="card-body">
+                            <h5 class="card-title">Interaksi Sosial</h5>
+                            <p class="card-text">Pelajari bentuk-bentuk interaksi sosial dalam masyarakat.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>12 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>6 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>4 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bab 2: Kegiatan Ekonomi -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab2">
-                            Bab 2: Kegiatan Ekonomi
-                        </button>
-                    </h2>
-                    <div id="bab2" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>A. Kegiatan Ekonomi</h3>
-                            
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Produksi</h4>
-                                            <ul>
-                                                <li>Faktor Produksi:
-                                                    <ul>
-                                                        <li>Alam</li>
-                                                        <li>Tenaga kerja</li>
-                                                        <li>Modal</li>
-                                                        <li>Kewirausahaan</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Distribusi</h4>
-                                            <ul>
-                                                <li>Saluran Distribusi:
-                                                    <ul>
-                                                        <li>Langsung</li>
-                                                        <li>Tidak langsung</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Lembaga Distribusi:
-                                                    <ul>
-                                                        <li>Agen</li>
-                                                        <li>Grosir</li>
-                                                        <li>Pengecer</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Konsumsi</h4>
-                                            <ul>
-                                                <li>Faktor yang Mempengaruhi:
-                                                    <ul>
-                                                        <li>Pendapatan</li>
-                                                        <li>Selera</li>
-                                                        <li>Harga</li>
-                                                        <li>Kebutuhan</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Pelaku Ekonomi</h3>
-                            <div class="table-responsive mb-4">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Pelaku</th>
-                                            <th>Peran</th>
-                                            <th>Contoh</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Rumah Tangga</td>
-                                            <td>Konsumen dan tenaga kerja</td>
-                                            <td>Keluarga</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Perusahaan</td>
-                                            <td>Produsen barang dan jasa</td>
-                                            <td>PT, CV, Firma</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pemerintah</td>
-                                            <td>Regulator dan fasilitator</td>
-                                            <td>Kementerian</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Masyarakat Luar Negeri</td>
-                                            <td>Partner perdagangan</td>
-                                            <td>Ekspor-impor</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <!-- Module 2 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Kegiatan Ekonomi">
+                        <div class="card-body">
+                            <h5 class="card-title">Kegiatan Ekonomi</h5>
+                            <p class="card-text">Memahami kegiatan ekonomi dan perannya dalam kehidupan.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>15 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>8 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>5 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bab 3: Perubahan Sosial Budaya -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab3">
-                            Bab 3: Perubahan Sosial Budaya
-                        </button>
-                    </h2>
-                    <div id="bab3" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>A. Pengertian dan Bentuk Perubahan Sosial Budaya</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Perubahan sosial budaya adalah perubahan yang terjadi dalam sistem ide yang dimiliki bersama oleh warga masyarakat, termasuk nilai, norma, dan teknologi.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bentuk Perubahan</h4>
-                                            <ul>
-                                                <li>Berdasarkan Kecepatan
-                                                    <ul>
-                                                        <li>Evolusi</li>
-                                                        <li>Revolusi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Berdasarkan Pengaruh
-                                                    <ul>
-                                                        <li>Kecil</li>
-                                                        <li>Besar</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Faktor Pendorong</h4>
-                                            <ul>
-                                                <li>Internal
-                                                    <ul>
-                                                        <li>Penemuan baru</li>
-                                                        <li>Pertambahan penduduk</li>
-                                                        <li>Konflik</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Eksternal
-                                                    <ul>
-                                                        <li>Kontak budaya</li>
-                                                        <li>Modernisasi</li>
-                                                        <li>Globalisasi</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>B. Dampak Perubahan Sosial Budaya</h3>
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="card border-success">
-                                        <div class="card-body">
-                                            <h4 class="text-success">Dampak Positif</h4>
-                                            <ul>
-                                                <li>Kemajuan teknologi</li>
-                                                <li>Peningkatan produktivitas</li>
-                                                <li>Kemudahan komunikasi</li>
-                                                <li>Peningkatan kualitas hidup</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card border-danger">
-                                        <div class="card-body">
-                                            <h4 class="text-danger">Dampak Negatif</h4>
-                                            <ul>
-                                                <li>Kesenjangan sosial</li>
-                                                <li>Krisis identitas</li>
-                                                <li>Konsumerisme</li>
-                                                <li>Degradasi moral</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Module 3 -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Perubahan Sosial">
+                        <div class="card-body">
+                            <h5 class="card-title">Perubahan Sosial Budaya</h5>
+                            <p class="card-text">Eksplorasi perubahan sosial dan dampaknya.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-video me-2"></i>10 Video</li>
+                                <li><i class="fas fa-file-pdf me-2"></i>5 Modul</li>
+                                <li><i class="fas fa-tasks me-2"></i>3 Kuis</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Semester 2 -->
-        <div class="semester-section">
-            <h2 class="text-center mb-4">Semester 2</h2>
-            <div class="accordion" id="semester2Accordion">
-                <!-- Bab 4: Mobilitas Sosial -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab4">
-                            Bab 4: Mobilitas Sosial
-                        </button>
-                    </h2>
-                    <div id="bab4" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Pengertian dan Bentuk Mobilitas Sosial</h3>
-                            
-                            <div class="alert alert-info mb-4">
-                                <h5><i class="fas fa-info-circle me-2"></i>Definisi:</h5>
-                                <p>Mobilitas sosial adalah perpindahan posisi atau status sosial seseorang atau sekelompok orang dari satu lapisan ke lapisan lain.</p>
-                            </div>
-
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Mobilitas Vertikal</h4>
-                                            <ul>
-                                                <li>Naik (Social Climbing)
-                                                    <ul>
-                                                        <li>Promosi jabatan</li>
-                                                        <li>Peningkatan pendapatan</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Turun (Social Sinking)
-                                                    <ul>
-                                                        <li>Degradasi jabatan</li>
-                                                        <li>Kebangkrutan</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Mobilitas Horizontal</h4>
-                                            <ul>
-                                                <li>Perpindahan tempat
-                                                    <ul>
-                                                        <li>Transmigrasi</li>
-                                                        <li>Urbanisasi</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Perpindahan pekerjaan
-                                                    <ul>
-                                                        <li>Alih profesi</li>
-                                                        <li>Rotasi kerja</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h4>Faktor-faktor yang Mempengaruhi</h4>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Faktor Pendorong</th>
-                                            <th>Faktor Penghambat</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pendidikan</td>
-                                            <td>Kemiskinan</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Motivasi</td>
-                                            <td>Diskriminasi</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kesempatan</td>
-                                            <td>Perbedaan ras/suku</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bab 5: Pluralitas Masyarakat Indonesia -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab5">
-                            Bab 5: Pluralitas Masyarakat Indonesia
-                        </button>
-                    </h2>
-                    <div id="bab5" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Keberagaman Masyarakat Indonesia</h3>
-                            
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Suku Bangsa</h4>
-                                            <ul>
-                                                <li>Jawa</li>
-                                                <li>Sunda</li>
-                                                <li>Batak</li>
-                                                <li>Minang</li>
-                                                <li>Bugis</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Agama</h4>
-                                            <ul>
-                                                <li>Islam</li>
-                                                <li>Kristen</li>
-                                                <li>Katolik</li>
-                                                <li>Hindu</li>
-                                                <li>Buddha</li>
-                                                <li>Konghucu</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Bahasa</h4>
-                                            <ul>
-                                                <li>Bahasa Indonesia</li>
-                                                <li>Bahasa Daerah</li>
-                                                <li>Dialek Lokal</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h4>Budaya</h4>
-                                            <ul>
-                                                <li>Adat Istiadat</li>
-                                                <li>Kesenian</li>
-                                                <li>Pakaian Adat</li>
-                                                <li>Makanan Khas</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="alert alert-success">
-                                <h5><i class="fas fa-handshake me-2"></i>Sikap terhadap Pluralitas:</h5>
-                                <ul class="mb-0">
-                                    <li>Toleransi</li>
-                                    <li>Saling menghormati</li>
-                                    <li>Gotong royong</li>
-                                    <li>Persatuan dalam keberagaman</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bab 6: Konflik dan Integrasi -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bab6">
-                            Bab 6: Konflik dan Integrasi
-                        </button>
-                    </h2>
-                    <div id="bab6" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <h3>Konflik dalam Masyarakat</h3>
-                            
-                            <div class="row g-4 mb-4">
-                                <div class="col-md-6">
-                                    <div class="card border-danger">
-                                        <div class="card-body">
-                                            <h4 class="text-danger">Penyebab Konflik</h4>
-                                            <ul>
-                                                <li>Perbedaan kepentingan</li>
-                                                <li>Kesenjangan sosial</li>
-                                                <li>Perbedaan budaya</li>
-                                                <li>Prasangka sosial</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card border-success">
-                                        <div class="card-body">
-                                            <h4 class="text-success">Cara Penyelesaian</h4>
-                                            <ul>
-                                                <li>Mediasi</li>
-                                                <li>Arbitrase</li>
-                                                <li>Kompromi</li>
-                                                <li>Konsiliasi</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>Integrasi Sosial</h3>
-                            <div class="alert alert-info mb-4">
-                                <p>Integrasi sosial adalah proses penyatuan berbagai kelompok dalam masyarakat melalui identitas bersama dengan tetap mempertahankan keunikan masing-masing.</p>
-                            </div>
-
-                            <h4>Faktor Pendorong Integrasi</h4>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Faktor</th>
-                                            <th>Contoh</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Kesadaran</td>
-                                            <td>Pancasila sebagai dasar negara</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Toleransi</td>
-                                            <td>Menghormati perbedaan agama</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kerjasama</td>
-                                            <td>Gotong royong</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigasi -->
-        <div class="bg-primary text-white p-3 rounded mt-5">
-            <h4>Daftar Materi:</h4>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Semester 1:</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#bab1" class="text-white">Bab 1: Interaksi Sosial</a></li>
-                        <li><a href="#bab2" class="text-white">Bab 2: Kegiatan Ekonomi</a></li>
-                        <li><a href="#bab3" class="text-white">Bab 3: Perubahan Sosial Budaya</a></li>
-                    </ul>
+                    <h5>Belajar IPS</h5>
+                    <p>Platform pembelajaran IPS interaktif untuk semua</p>
                 </div>
-                <div class="col-md-6">
-                    <h5>Semester 2:</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#bab4" class="text-white">Bab 4: Mobilitas Sosial</a></li>
-                        <li><a href="#bab5" class="text-white">Bab 5: Pluralitas Masyarakat Indonesia</a></li>
-                        <li><a href="#bab6" class="text-white">Bab 6: Konflik dan Integrasi</a></li>
-                    </ul>
+                <div class="col-md-6 text-md-end">
+                    <h5>Hubungi Kami</h5>
+                    <p>Email: info@belajarips.com<br>
+                    WhatsApp: +62 812-3456-7890</p>
                 </div>
             </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Belajar IPS. All rights reserved.</p>
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html> 

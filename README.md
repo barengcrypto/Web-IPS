@@ -112,4 +112,69 @@ Kami sangat terbuka untuk kontribusi dari siapa saja yang ingin mengembangkan we
 
 ## Lisensi
 
-MIT License - silakan gunakan dan kembangkan dengan bebas untuk keperluan pendidikan. 
+MIT License - silakan gunakan dan kembangkan dengan bebas untuk keperluan pendidikan.
+
+# Website Pembelajaran IPS
+
+Website pembelajaran IPS untuk siswa SMP yang mencakup materi Kelas 7, 8, dan 9.
+
+## Akses Website
+
+Website ini dapat diakses melalui:
+https://barengcrypto.github.io/Web-IPS/
+
+## Fitur Website
+
+- Materi pembelajaran IPS untuk Kelas 7, 8, dan 9
+- Pembahasan materi Sejarah, Geografi, dan Ekonomi
+- Desain responsif yang dapat diakses dari berbagai perangkat
+- Interface yang modern dan mudah digunakan
+- Sistem quiz interaktif
+
+## Struktur Materi
+
+### Kelas 7
+- Ruang dan Interaksi Antarruang
+- Sumber Daya Alam
+- Dinamika Kependudukan
+
+### Kelas 8
+- Interaksi Sosial
+- Kegiatan Ekonomi
+- Perubahan Sosial Budaya
+
+### Kelas 9
+- Geografi (Asia dan Eropa)
+- Perdagangan Internasional
+- Modernisasi dan Perubahan Sosial
+
+## Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Font Awesome
+- Google Fonts (Poppins)
+
+## Pengembangan Lokal
+
+1. Clone repository ini:
+```bash
+git clone https://github.com/barengcrypto/Web-IPS.git
+```
+
+2. Buka file index.html di browser
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada project ini, silakan:
+1. Fork repository
+2. Buat branch baru
+3. Commit perubahan
+4. Push ke branch
+5. Buat Pull Request
+
+## Lisensi
+
+Project ini dilisensikan di bawah MIT License. 

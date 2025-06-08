@@ -256,13 +256,16 @@ function navigateToMaterial(grade) {
     window.location.href = path;
 }
 
-// Handle smooth scrolling
+// Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    smoothScrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -278,19 +281,214 @@ document.addEventListener('DOMContentLoaded', function() {
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
         
+        let current = '';
+        
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.clientHeight;
-            const id = section.getAttribute('id');
             
             if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + id) {
-                        link.classList.add('active');
-                    }
-                });
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
             }
         });
     });
-}); 
+});
+
+// Quiz functionality
+function startQuiz(level) {
+    const quizContainer = document.getElementById('quiz-container');
+    const questions = getQuestions(level);
+    let currentQuestion = 0;
+    let score = 0;
+
+    function showQuestion() {
+        const question = questions[currentQuestion];
+        
+        let html = `
+            <div class="quiz-question mb-4">
+                <h4 class="mb-3">${question.question}</h4>
+                <div class="options">
+        `;
+        
+        question.options.forEach((option, index) => {
+            html += `
+                <div class="quiz-option mb-3" onclick="selectOption(this, ${index === question.correct})">
+                    <span class="option-letter">${String.fromCharCode(65 + index)}.</span>
+                    ${option}
+                </div>
+            `;
+        });
+
+        html += `
+                </div>
+            </div>
+            <div class="quiz-progress">
+                <p>Pertanyaan ${currentQuestion + 1} dari ${questions.length}</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: ${(currentQuestion + 1) / questions.length * 100}%"></div>
+                </div>
+            </div>
+        `;
+
+        quizContainer.innerHTML = html;
+    }
+
+    function showResult() {
+        const percentage = (score / questions.length) * 100;
+        let message = '';
+        
+        if (percentage >= 80) {
+            message = 'Luar biasa! Kamu menguasai materi dengan sangat baik!';
+        } else if (percentage >= 60) {
+            message = 'Bagus! Terus tingkatkan pemahamanmu!';
+        } else {
+            message = 'Jangan menyerah! Coba lagi dan pelajari materinya kembali.';
+        }
+
+        quizContainer.innerHTML = `
+            <div class="text-center">
+                <h3 class="mb-4">Hasil Kuis</h3>
+                <div class="score-circle mb-4">
+                    <h1>${percentage}%</h1>
+                    <p>Skor Anda</p>
+                </div>
+                <p class="mb-4">${message}</p>
+                <p class="mb-4">Anda menjawab benar ${score} dari ${questions.length} pertanyaan.</p>
+                <button class="btn btn-primary" onclick="location.reload()">Coba Lagi</button>
+            </div>
+        `;
+    }
+
+    window.selectOption = function(element, isCorrect) {
+        // Disable all options
+        const options = document.querySelectorAll('.quiz-option');
+        options.forEach(opt => opt.style.pointerEvents = 'none');
+
+        // Show correct/incorrect
+        element.classList.add(isCorrect ? 'correct' : 'incorrect');
+        
+        if (isCorrect) score++;
+
+        // Wait and show next question
+        setTimeout(() => {
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }, 1500);
+    };
+
+    showQuestion();
+}
+
+function getQuestions(level) {
+    const questions = {
+        kelas7: [
+            {
+                question: "Apa yang dimaksud dengan interaksi antarruang?",
+                options: [
+                    "Hubungan sosial antarmanusia",
+                    "Hubungan timbal balik antara wilayah satu dengan lainnya",
+                    "Perpindahan penduduk antarkota",
+                    "Pertukaran budaya antarnegara"
+                ],
+                correct: 1
+            },
+            {
+                question: "Manakah yang termasuk sumber daya alam yang dapat diperbaharui?",
+                options: [
+                    "Minyak bumi",
+                    "Batu bara",
+                    "Hutan",
+                    "Emas"
+                ],
+                correct: 2
+            },
+            {
+                question: "Apa faktor utama yang mempengaruhi pertumbuhan penduduk?",
+                options: [
+                    "Cuaca",
+                    "Kelahiran dan kematian",
+                    "Teknologi",
+                    "Ekonomi"
+                ],
+                correct: 1
+            }
+        ],
+        kelas8: [
+            {
+                question: "Apa yang dimaksud dengan mobilitas sosial?",
+                options: [
+                    "Perpindahan tempat tinggal",
+                    "Perubahan status sosial seseorang",
+                    "Perubahan pekerjaan",
+                    "Perpindahan sekolah"
+                ],
+                correct: 1
+            },
+            {
+                question: "Manakah yang merupakan contoh interaksi sosial asosiatif?",
+                options: [
+                    "Konflik",
+                    "Persaingan",
+                    "Kerjasama",
+                    "Pertentangan"
+                ],
+                correct: 2
+            },
+            {
+                question: "Apa yang dimaksud dengan pluralitas?",
+                options: [
+                    "Perbedaan pendapat",
+                    "Keberagaman dalam masyarakat",
+                    "Perpecahan kelompok",
+                    "Persatuan bangsa"
+                ],
+                correct: 1
+            }
+        ],
+        kelas9: [
+            {
+                question: "Apa yang dimaksud dengan perdagangan internasional?",
+                options: [
+                    "Perdagangan antar provinsi",
+                    "Perdagangan dalam satu negara",
+                    "Perdagangan antar negara",
+                    "Perdagangan dalam kota"
+                ],
+                correct: 2
+            },
+            {
+                question: "Manakah yang merupakan dampak positif globalisasi?",
+                options: [
+                    "Hilangnya budaya lokal",
+                    "Kemudahan akses informasi",
+                    "Ketergantungan teknologi",
+                    "Konsumerisme"
+                ],
+                correct: 1
+            },
+            {
+                question: "Apa fungsi utama uang dalam perekonomian?",
+                options: [
+                    "Alat tukar",
+                    "Hiasan",
+                    "Koleksi",
+                    "Simpanan"
+                ],
+                correct: 0
+            }
+        ]
+    };
+
+    return questions[level] || [];
+} 
